@@ -14,7 +14,7 @@
     <md-list-item *ngFor="let todo of todos let i=index">
       <md-icon class="delete" (click)="deleteTodo(todo)">delete</md-icon>
       <md-icon class="build" (click)="editTodo(todo)">build</md-icon>
-      <h4 *ngIf="!todo.editable">{{ todo.name }}</h4>
+      <h4 mdTooltip="{{ todo.name }}" *ngIf="!todo.editable">{{ todo.name }}</h4>
       <md-form-field *ngIf="todo.editable" class="example-full-width">
           <input mdInput
           name="rename-{{i}}"

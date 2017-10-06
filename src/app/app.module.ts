@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCheckboxModule, MatInputModule, MatListModule, MatGridListModule, MdError, MatIconModule, MdRippleModule, MatButtonModule } from '@angular/material';
+import { MdButtonModule, MdCheckboxModule, MatInputModule, MatListModule, MatGridListModule, MdError, MatIconModule, MatTooltipModule } from '@angular/material';
 import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
@@ -23,8 +23,7 @@ import { TodoComponent } from './todo/todo.component';
     FormsModule,
     ReactiveFormsModule,
     MatIconModule,
-    MdRippleModule,
-    MatButtonModule
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

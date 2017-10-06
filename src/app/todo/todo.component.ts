@@ -31,14 +31,13 @@ export class TodoComponent {
   }
   editTodo(todo) {
     todo.editable = !todo.editable;
-    console.log(this.todos);
+
   }
   renameTodo(todo, renameVal) {
     if (renameVal) {
       todo.name = renameVal;
-      console.log(this.todos);
       todo.editable = false;
     }
   }
-  
+
 }
